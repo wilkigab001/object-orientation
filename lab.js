@@ -422,11 +422,11 @@ console.log(myFirstMotorcycle)
 */
 
 class Boat extends Vehicle{
-  constructor(capacity, color, mileage, name, type){
+  constructor(capacity, color, mileage, name, type, isSeaworthy){
     super(capacity, color, mileage)
     this.name = name,
     this.type = type,
-    this.isSeaworthy = false
+    this.isSeaworthy = isSeaworthy
   }
 
   checkSeaworthiness(){
@@ -448,7 +448,7 @@ class Boat extends Vehicle{
   properties except isSeaworthy -- make that one false. Call your variable myFirstBoat.
 */
 
-let boat = new Boat(6, 'green', 55, 'Green thunder', 'Seadoo')
+let boat = new Boat(6, 'green', 55, 'Green thunder', 'Seadoo', false)
 /*
   Call the checkSeaworthiness method on your new boat
 */
